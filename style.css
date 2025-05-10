@@ -3,10 +3,9 @@ body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden; /* Prevents page overflow */
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
 }
 
 .calculator-container {
@@ -17,8 +16,7 @@ body {
   max-width: 400px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: relative;
-  z-index: 1; /* Ensures the calculator box stays on top */
+  margin: 40px auto 20px;
 }
 
 h1 {
@@ -77,9 +75,11 @@ button:hover {
   font-weight: 500;
 }
 
-.credit {
-  margin-top: 25px;
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
   font-size: 14px;
-  color: #7f8c8d;
-  font-style: italic;
+  margin-top: auto;
 }
