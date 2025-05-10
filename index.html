@@ -11,7 +11,52 @@
   <div class="calculator-container">
     <h1>📄 Project Documentation Calculator</h1>
 
+    <div class="input-section"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Documentation Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>📄 Project Documentation Calculator</h1>
+
     <div class="input-section">
+      <label for="bwPages">🖤 Black and White Pages</label>
+      <input type="number" id="bwPages" placeholder="Enter number of B/W pages" min="0" />
+    </div>
+
+    <div class="input-section">
+      <label for="colorPages">🎨 Color Pages</label>
+      <input type="number" id="colorPages" placeholder="Enter number of color pages" min="0" />
+    </div>
+
+    <div class="input-section">
+      <label for="bindingCost">📎 Binding Cost (Fixed)</label>
+      <input type="number" id="bindingCost" value="160" readonly />
+    </div>
+
+    <div class="input-section">
+      <label for="sheetCost">🪟 Transparent Sheets (3 × ₹5)</label>
+      <input type="number" id="sheetCost" value="15" readonly />
+    </div>
+
+    <button onclick="calculateCost()">💰 Calculate Total Cost</button>
+
+    <div class="result" id="result">
+      The cost of Estimation for your Project is: <strong>₹0</strong>
+    </div>
+
+    <p class="credit">✨ Made by Khaja</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
       <label for="bwPages">🖤 Black and White Pages</label>
       <input type="number" id="bwPages" placeholder="Enter number of B/W pages" min="0" />
     </div>
